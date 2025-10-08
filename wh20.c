@@ -1,0 +1,14 @@
+// 20. Check Armstrong number (153 = Armstrong)
+
+#include <stdio.h>
+int main() {
+    int n=153,temp=n,sum=0;
+    while(temp!=0) {
+        int d=temp%10;
+        sum += d*d*d;
+        temp/=10;
+    }
+    if(sum==n) printf("Armstrong");
+    else printf("Not Armstrong");
+    return 0;
+}
